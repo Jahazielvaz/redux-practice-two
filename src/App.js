@@ -9,7 +9,6 @@ class App extends Component {
 
 
   render(){
-    store.dispatch(action)
 
     return (
       <div className="App">

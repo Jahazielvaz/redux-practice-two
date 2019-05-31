@@ -1,6 +1,8 @@
 const reducer  = (state, action) => {
-  console.log(action)
-  if('MESSAGE'){
+  console.log(state)
+  if(action.type === 'MESSAGE'){
+    return {...state, msg: action.myMsg}
+  } else if ('MSG_TWO'){
     return state
   }
 
